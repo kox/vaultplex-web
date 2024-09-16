@@ -7,13 +7,17 @@ const checkIcon = (
   </svg>
 );
 
+interface ICustomList {
+  text: string;
+}
+
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const CustomList = (props: ICustomList) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
-      {text}
+      {props.text}
     </p>
   );
 
@@ -35,15 +39,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Tokenized Vaults" />
-                    <List text="Low Transaction Fees" />
-                    <List text="Highly Secure" />
+                    <CustomList text="Tokenized Vaults" />
+                    <CustomList text="Low Transaction Fees" />
+                    <CustomList text="Highly Secure" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Fully Customizable" />
-                    <List text="ERC 4626 Compatible" />
-                    <List text="Open Source Collaboration" />
+                    <CustomList text="Fully Customizable" />
+                    <CustomList text="ERC 4626 Compatible" />
+                    <CustomList text="Open Source Collaboration" />
                   </div>
                 </div>
               </div>
