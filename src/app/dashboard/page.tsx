@@ -8,7 +8,7 @@ const Dashboard = () => {
           Dashboard Under Construction
         </h1>
         <p className="mb-8 text-lg text-gray-600 dark:text-gray-300">
-          We're working hard to build an amazing experience for you. In the
+          We are working hard to build an amazing experience for you. In the
           meantime, feel free to connect with us:
         </p>
         <div className="space-y-4">
